@@ -1,0 +1,36 @@
+{
+  "name": "Dummy-Virtualization-Server",
+  "version": "1.0.0",
+  "description": "A dummy server for the service virtualization project",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"node server.js\" \"node client/scripts/start.js\"",
+    "build": "concurrently \"node server.js\" \"node client/scripts/build.js\"",
+    "test": "node client/scripts/test.js --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shadidchowdhury/dummy-virtualization-server.git"
+  },
+  "keywords": [
+    "virtualization",
+    "dummy"
+  ],
+  "author": "Shadid Chowdhury",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadidchowdhury/dummy-virtualization-server/issues"
+  },
+  "homepage": "https://github.com/shadidchowdhury/dummy-virtualization-server#readme",
+  "dependencies": {
+    "babel-jest": "20.0.3",
+    "body-parser": "^1.15.0",
+    "concurrently": "^3.5.1",
+    "express": "^4.13.4",
+    "jest": "20.0.4",
+    "react": "^15.6.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  }
+}
