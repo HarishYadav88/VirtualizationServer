@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-do
 
 import VirtualizationsPage from './containers/VirtualizationsPage';
 import EditVirtualizationPage from './containers/EditVirtualizationPage';
-import AddRecipeButton from './containers/modaltest';
+import VirtualizationModal from './containers/modaltest';
 
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +23,7 @@ class App extends Component {
           <br />
           <div className="container">
           <Switch>
-              <Route path="/virtualizations/undeploy/:virtualizationID" exact component={AddRecipeButton}/>            
+              <Route path="/virtualizations/undeploy/:virtualizationID" exact component={VirtualizationModal}/>            
               <Route path="/virtualizations" exact component={VirtualizationsPage}/>
               <Route path="/virtualizations/edit/:virtualizationID" exact component={EditVirtualizationPage}/>
               <Redirect to="/virtualizations" />
