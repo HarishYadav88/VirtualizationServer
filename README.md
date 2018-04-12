@@ -8,13 +8,13 @@
 #####To run:
   ```
    Installation package has 2 steps.
-    > npm install to root folder
-    > npm install inside client  folder
+    => ..\VirtualizationServer-master\VirtualizationServer-master> npm install
+    => ..\VirtualizationServer-master\VirtualizationServer-master\client> npm install
     
    To start application come back to root folder
-    > npm start - to start application with server and client
-    > npm build - to build application with server and client
-    > npm test - to test application
+    => ..\VirtualizationServer-master\VirtualizationServer-master> npm start - to start application with server and client
+    => ..\VirtualizationServer-master\VirtualizationServer-master> npm build - to build application with server and client
+    => ..\VirtualizationServer-master\VirtualizationServer-master> npm test - to test application
     
   ````
 
